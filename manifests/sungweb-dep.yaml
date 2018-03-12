@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1 
+kind: Deployment
+metadata:
+  name: sungweb
+spec:
+  replicas: 1 
+  template:
+    metadata:
+      labels:
+        run: sungweb 
+    spec:
+      containers:
+      - image: gcr.io/sunarai-1350/sungweb:latest
+        name: sungweb
+        volumeMounts:
+        - name: sungstorage
+          mountPath: /var/www/html/sungweb
+        ports:
+        - containerPort: 80
+          protocol: TCP
+      volumes:
+      - name: sungstorage
+        persistentVolumeClaim:
+          claimName: sungstorage-pvc
