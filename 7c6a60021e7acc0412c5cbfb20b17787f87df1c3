@@ -1,0 +1,1 @@
+{"jobID":"03485e86-63bc-6122-8f9d-7c982261c5db","spec":{"type":"policy","cause":{"Message":"","User":"sungho1031park \u003csungho1031park@gmail.com\u003e"},"spec":{"default:deployment/sungweb":{"add":{"automated":"true"},"remove":null}}},"result":null}
