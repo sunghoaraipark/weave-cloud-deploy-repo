@@ -12,7 +12,7 @@ spec:
         run: sungweb 
     spec:
       containers:
-      - image: gcr.io/sunarai-1350/sungweb:af50fafca54639af864f2e691a83a7e34fe910b66b35ffce79acc62651793a1a
+      - image: gcr.io/sunarai-1350/sungweb:master-426ac4f
         name: sungweb
         volumeMounts:
         - name: sungstorage
